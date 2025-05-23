@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(img/fundo.png);
+    background-repeat: no-repeat;
+}
+
+button {
+
+    padding: 0.3rem 0.6rem;
+    color: rgb(20, 20, 60);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid rgb(20, 20, 60);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button i {
+
+    pointer-events: none;
+}
+
+button:hover {
+
+    color: rgb(240, 240, 240);
+    background-color: rgb(20, 20, 60);
+}
+
+input, select {
+
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+
+    display: none;
+}
+
+/* TODO CONTAINER */
+.todo_container {
+
+    margin: 3rem auto 0;
+    padding: 1.5rem;
+    max-width: 450px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+}
+
+/* HEADER */
+.todo_container header {
+
+    padding: 0 1rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(200, 200, 250);
+}
+
+/* TODO FORM */
+#todo_form, #edit_form {
+
+    padding: 1rem;
+    border-bottom: 1px solid rgb(200, 200, 250);
+}
+
+#todo_form p, #edit_form p {
+
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form_control {
+
+    display: flex;
+}
+
+.form_control input {
+
+    margin-right: 0.3rem;
+}
+
+#btn_cancel {
+
+    margin-top: 1rem;
+}
+
+/* TOOLBAR */
+#toolbar {
+
+    padding: 1rem;
+    display: flex;
+    border-bottom: 1px solid rgb(200, 200, 250);
+}
+
+#toolbar h4 {
+
+    margin-bottom: 0.5rem;
+}
+
+#search {
+
+    margin-right: 1rem;
+    padding-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(200, 200, 250);
+}
+
+#search form {
+
+    display: flex;
+}
+
+#search input {
+
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+
+    flex: 1;
+}
+
+/* TODO LIST */
+.todo {
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(200, 200, 250);
+    transition: 0.3s;
+}
+
+.todo h3 {
+
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.todo button {
+
+    margin-left: 0.4rem;
+}
+
+.done {
+
+    background-color: rgb(40, 40, 80);
+}
+
+.done h3 {
+
+    color: rgb(240, 240, 240);
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+

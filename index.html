@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <script src="script.js" defer></script>
+    <title>Todo List Avançado</title>
+</head>
+<body>
+    <div class="todo_container">
+        <header>
+            <h1>Todo Avançado</h1>
+        </header>
+        <form id="todo_form">
+            <p>Adicione sua tarefa:</p>
+            <div class="form_control">
+                <input type="text" id="todo_input" placeholder="O que você vai fazer?">
+                <button type="submit" id="btn_add">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit_form" class="hide">
+            <p>Edite sua tarefa:</p>
+            <div class="form_control">
+                <input type="text" id="edit_input">
+                <button type="submit" id="btn_check">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="btn_cancel">Cancelar</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search_input" placeholder="Buscar">
+                    <button id="btn_erase">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter_select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo_list">
+        </div>
+    </div>
+</body>
+</html>
